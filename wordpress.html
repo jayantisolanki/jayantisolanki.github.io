@@ -408,12 +408,12 @@ foreach ( $terms as $term ) {
                                 <span class="function">
                                     <pre class="line-numbers">
 <code class="language-php">//first need to register menu in function file  
-function register_snipshot_menu() {
+function register_codesnippets_menu() {
 register_nav_menu('header-menu',__( 'header' ));
 register_nav_menu('footer-menu',__( 'footer' ));
 }
 
-add_action( 'init' , 'register_snipshot_menu' );
+add_action( 'init' , 'register_codesnippets_menu' );
 
 // add this code where you want to show your menu  
 wp_nav_menu(
@@ -931,16 +931,16 @@ function ts_redirect_product_pages()
                                 <span class="function">
                                     <pre class="line-numbers">
 <code class="language-php">/*** reduce password security ***/
-function snipshot_min_password_strength( $strength ) {
+function codesnippets_min_password_strength( $strength ) {
     return 2;
 }
-add_filter( 'woocommerce_min_password_strength', 'snipshot_min_password_strength', 10, 1 );
+add_filter( 'woocommerce_min_password_strength', 'codesnippets_min_password_strength', 10, 1 );
 
 /*** reduce password security ***/
-function snipshot_remove_password_strength() {
+function codesnippets_remove_password_strength() {
     wp_dequeue_script( 'wc-password-strength-meter' );
 }
-add_action( 'wp_print_scripts', 'snipshot_remove_password_strength', 10 );
+add_action( 'wp_print_scripts', 'codesnippets_remove_password_strength', 10 );
 
 </code>
                                 </pre>
@@ -1085,7 +1085,7 @@ jQuery(function($) {
                                 <span class="function">
                                     <pre class="line-numbers">
 <code class="language-php">// Register Custom Post
-function snipshot_theme_post_types()
+function codesnippets_theme_post_types()
 {	
     register_post_type('media', array(
         'labels' => array(
@@ -1109,7 +1109,7 @@ function snipshot_theme_post_types()
         'menu_icon' => 'dashicons-calendar',
     ));
 }
-add_action('init', 'snipshot_theme_post_types');;
+add_action('init', 'codesnippets_theme_post_types');;
 endwhile; 
 </code>
                                 </pre>
