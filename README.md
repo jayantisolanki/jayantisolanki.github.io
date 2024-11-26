@@ -1,1 +1,2 @@
-# jayantisolanki.github.io
+# Code Snippets
+WordPress and Shopify Code Snippets

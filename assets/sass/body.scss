@@ -1,0 +1,46 @@
+.element {
+    @include jn-standalone((
+        padding-top: (40px, 60px, null, 80px, 100px, 120px),
+        font-size: (40px, 60px, null, 80px, 100px, 120px),
+        font-weight: (400, 600, null, 800, 100, 100),
+    ), min);
+    @include jn-standalone((
+        padding-top: (40px, 60px, null, 80px, 100px, 120px),
+        font-size: (40px, 60px, null, 80px, 100px, 120px),
+        font-weight: (400, 600, null, 800, 100, 100),
+    ), min);
+}
+.xyz {
+    @include flexbox(
+        ('flex-direction', row),
+        ('justify-content', center),
+        ('align-items', center),
+    );
+}
+
+
+.jn__container{
+    padding: 0 15px;
+    margin: 0 auto;
+    @include jn-standalone((
+        width: (100%, 540px, 760px, 960px, 1170px, 1366px),
+    ), min);
+}
+  
+
+.inner_header{
+    width: 100%;
+    padding: 7px 0;
+    box-shadow: unset;
+    border-bottom: 1px solid #0f172a1a;
+    .jn__logo{
+        h1{
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            @include jn-standalone((
+                font-size: (18px, 20px, 22px, 24px, 26px, 28px),
+            ), min);
+
+        }
+    }
+}

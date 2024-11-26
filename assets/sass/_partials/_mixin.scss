@@ -1,0 +1,137 @@
+// only used for min media query
+// @mixin jn-standalone($properties) {
+//     $breakpoints: (null, 576px, 768px, 992px, 1200px, 1400px);
+//     // Base styles (no media queries)
+//     @each $property,
+//     $vals in $properties {
+//         $value: nth($vals, 1); // Get the value for the first (base) breakpoint
+//         @if $value !=null {
+//             #{$property}: $value;
+//         }
+//     }
+//     // Responsive styles
+//     @for $i from 2 through length($breakpoints) {
+//         $breakpoint: nth($breakpoints, $i);
+//         @if $breakpoint {
+//             @media (min-width: $breakpoint) {
+//                 @each $property, $vals in $properties {
+//                     $value: nth($vals, $i);
+//                     @if $value !=null {
+//                         #{$property}: $value;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// used for both type of media queries | min & max
+@mixin jn-standalone($properties, $media-type: min) {
+    $breakpoints: (null, 576px, 768px, 992px, 1200px, 1400px);
+    // Base styles (no media queries)
+    @each $property, $vals in $properties {
+        $value: nth($vals, 1); // Get the value for the first (base) breakpoint
+        @if $value != null {
+            #{$property}: $value;
+        }
+    }
+    // Responsive styles
+    @for $i from 2 through length($breakpoints) {
+        $breakpoint: nth($breakpoints, $i);
+        @if $breakpoint {
+            @media (#{$media-type}-width: $breakpoint) {
+                @each $property, $vals in $properties {
+                    $value: nth($vals, $i);
+                    @if $value != null {
+                        #{$property}: $value;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin jn-align($h-align: null, $v-align: null) {
+    // If only one argument is passed, set $v-align to be the same as $h-align
+    display: flex;
+    
+    @if $v-align == null and $h-align != null {
+        $v-align: $h-align;
+    }
+
+    @if $h-align != null {
+        justify-content: $h-align;
+    }
+
+    @if $v-align != null {
+        align-items: $v-align;
+    }
+}
+
+
+// Basic
+// @mixin flexbox($properties...) {
+//     display: flex;
+  
+//     @each $property in $properties {
+//       $name: nth($property, 1);
+//       $value: nth($property, 2);
+  
+//       @if ($name == 'flex-direction') {
+//         flex-direction: $value;
+//       } @else if ($name == 'flex-wrap') {
+//         flex-wrap: $value;
+//       } @else if ($name == 'justify-content') {
+//         justify-content: $value;
+//       } @else if ($name == 'align-items') {
+//         align-items: $value;
+//       } @else if ($name == 'align-content') {
+//         align-content: $value;
+//       } @else if ($name == 'order') {
+//         order: $value;
+//       } @else if ($name == 'flex-grow') {
+//         flex-grow: $value;
+//       } @else if ($name == 'flex-shrink') {
+//         flex-shrink: $value;
+//       } @else if ($name == 'flex-basis') {
+//         flex-basis: $value;
+//       } @else if ($name == 'align-self') {
+//         align-self: $value;
+//       } @else {
+//         @warn "Unknown property `#{$name}` in flexbox mixin.";
+//       }
+//     }
+//   }
+  
+
+
+// Advance
+@mixin flexbox($properties...) {
+    $flex-properties: (
+        'flex-direction': flex-direction,
+        'flex-wrap': flex-wrap,
+        'justify-content': justify-content,
+        'align-items': align-items,
+        'align-content': align-content,
+        'order': order,
+        'flex-grow': flex-grow,
+        'flex-shrink': flex-shrink,
+        'flex-basis': flex-basis,
+        'align-self': align-self
+    );
+
+    display: flex;
+
+    @each $property in $properties {
+        $name: nth($property, 1);
+        $value: nth($property, 2);
+
+        @if map-has-key($flex-properties, $name) {
+        #{map-get($flex-properties, $name)}: $value;
+        } @else {
+        @warn "Unknown property `#{$name}` in flexbox mixin.";
+        }
+    }
+}
+  

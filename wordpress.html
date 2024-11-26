@@ -1,0 +1,1327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="./assets/images/fav.png">
+
+<!-- meta tags -->
+<title>Wordpress Code Snippets</title>
+<meta name="description" content="Find the most useful WordPress code snippets to help you build your website. Get easy-to-implement code solutions for common WordPress tasks, including customizing themes, adding functionality, and optimizing performance. Save time and improve your WordPress development with our collection of code snippets.">
+
+<!-- Bootstrap CSS -->
+<link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/style.css" rel="stylesheet">
+<link href="./assets/prism/prism.css" rel="stylesheet">
+<link href="./assets/line-number/line-number.css" rel="stylesheet">
+<script src="./assets/prism/prism.js"></script>
+<script src="./assets/line-number/line-number.js"></script>
+</head>
+
+<body style="background-color:#fff">
+
+<section class="main">
+    <header class="container-fluid  darkHdr">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-flex align-items-center">
+                    <div class="inner d-flex justify-content-center justify-content-sm-start">
+                        <h1 class="logoText">
+                            <a href="./">
+                                <span>&lt;</span>Code Snippets<span>/&gt;</span>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-sm-flex">
+                    <div class="inner d-flex justify-content-end social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/jayantisolanki" target="_blank">
+                                    <img src="./assets/images/github.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="ap_wrapper">
+        <div class="ap_newDesign left" id="sideBar">
+            <div class="inner">
+                <ul>
+                    <li class="general">
+                        <img src="./assets/images/book.png" alt="">Getting Started
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="javascript:void(0)" onclick="scrollToSection('aa')">
+                            Basic Functions
+                        </a>
+                    </li>
+                    <li data-topic="Get Logo on Frontend">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ab')">
+                            Get Logo on Frontend
+                        </a>
+                    </li>
+                    <li data-topic="Get Page Featured Image">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ac')">
+                            Get Page Featured Image
+                        </a>
+                    </li>
+                    <li data-topic="Get Blog Lisitng Featured Image">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ad')">
+                            Get Blog Lisitng Featured Image
+                        </a>
+                    </li>
+                    <li data-topic="Get Categories on Single Post">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ae')">
+                            Get Categories on Single Post
+                        </a>
+                    </li>
+                    <li data-topic="Get Tags on Single Post">
+                        <a href="javascript:void(0)" onclick="scrollToSection('af')">
+                            Get Tags on Single Post
+                        </a>
+                    </li>
+                    <li data-topic="Menu Functions">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ag')">
+                            Menu Functions
+                        </a>
+                        <ul class="innerItems">
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ag1')">
+                                    Add Custom Class to 'li' in Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ag2')">
+                                    Add Custom Class to 'menu anchor' in Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ag3')">
+                                    Override 'Submenu' class in Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ag4')">
+                                    Add 'Caret for Submenu' in Menu
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-topic="Register Sidebar">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ah')">
+                            Register Sidebar
+                        </a>
+                    </li>
+                    <li data-topic="Create Shortcode">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ai')">
+                            Create Shortcode
+                        </a>
+                    </li>
+                    <li data-topic="Get Categories & Sub Categories of Posts">
+                        <a href="javascript:void(0)" onclick="scrollToSection('aj')">
+                            Get Categories & Sub Categories of Posts
+                        </a>
+                    </li>
+                    <li data-topic="Wocommerce">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ak')">
+                            Wocommerce
+                        </a>
+                        <ul class="innerItems">
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ak1')">
+                                    Redirect after Login & Registration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ak2')">
+                                    Custom Woocommerce Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ak3')">
+                                    Custom Woocommerce Login & registration Form
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ak4')">
+                                    Logout From Woocommerce
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ak5')">
+                                    Remove links of single products from products listing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="scrollToSection('ak6')">
+                                    Remove/Reduce Password Security
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-topic="Get file size">
+                        <a href="javascript:void(0)" onclick="scrollToSection('al')">
+                            Get file size
+                        </a>
+                    </li>
+                    <li data-topic="Upload Files from Fronend in wordpress using Ajax">
+                        <a href="javascript:void(0)" onclick="scrollToSection('am')">
+                            Upload Files from Fronend in wordpress using Ajax
+                        </a>
+                    </li>
+                    <li data-topic="Register Custom Post">
+                        <a href="javascript:void(0)" onclick="scrollToSection('an')">
+                            Get Custom Post using wp-query
+                        </a>
+                    </li>
+                    <li data-topic="Get Custom Post using wp-query">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ao')">
+                            Get Custom Post using wp-query
+                        </a>
+                    </li>
+                    <li data-topic="Check is Valid Business Emails">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ap')">
+                            Check is Valid Business Emails
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="ap_right_box">
+            <div class="inner_box">
+                <div class="right">
+
+                    <div class="top_hdng">
+                        <h3 class="hdng">
+                            Get started with JN Snippets
+                        </h3>
+                        <p>
+                            JN Snippets is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
+                        </p>
+                    </div>
+
+                    <ul>
+                        <!--- getting content on front end --->
+                        <li id="aa">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Basic Functions
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    We've listed some basic functions that can help you fetch content and perform other tasks in WordPress. Use these functions to streamline your website development and improve your overall WordPress experience.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//Get site URL
+get_site_url();
+
+//Get site Title
+the_title();
+
+//Get post Permalink
+the_permalink();
+
+//Get Post URL
+the_post_thumbnail_url();
+
+//Get Post Date
+the_date('d M Y');
+
+//Get Author
+the_author();
+
+//Get Trim Content
+wp_trim_words( get_the_content(), 30, '[...]' );
+
+//Add hyphen to a string
+sanitize_title_with_dashes(get_the_title());
+
+//Get Excerpt
+the_excerpt();
+
+//Add theme support of Custom Logo
+add_theme_support( 'custom-logo', $defaults );
+
+//Add theme support of title tag
+add_theme_support( 'title-tag' );
+
+// Remove &lt;p&gt; and &lt;br/&gt; from Contact Form 7 (Contact form 7 automatically added paragraph and break tags)
+add_filter('wpcf7_autop_or_not', '__return_false');
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ab">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Get Logo on Frontend
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    With the following code, you can easily retrieve your logo on the frontend of your website. Improve your website's branding and user experience by displaying your logo prominently on your website.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">$custom_logo_id = get_theme_mod( 'custom_logo' );
+$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+echo '&lt;img src="' . esc_url( $custom_logo_url ) . '" alt="Site Logo">';</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ac">
+                            <div>
+
+                                <h3>
+                                    <span class="text">
+                                        # Get Page Featured Image
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    With the following code you can easily retrieve the featured image for a page in WordPress with the following code. Display your page's featured image prominently on your website to improve your site's visual appeal and user experience. Implement this code to streamline your development process and enhance your website's functionality.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">if (has_post_thumbnail( $post->ID ) ): ?>
+    $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
+    echo $image[0];
+endif;</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ad">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Get Blog Listing Featured Image
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Retrieve the featured image for your WordPress blog listings with ease using the following code. Enhance your website's visual appeal and user experience by prominently displaying featured images for each blog post on your website. Simplify your development process and optimize your website's functionality with this useful code snippet.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">if (is_home() && get_option('page_for_posts') ) {
+    $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_option('page_for_posts')),'full');
+    $featured_image = $img[0];
+    $featured_image;
+}</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ae">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Get categories on single post
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    With the following code, you can retrieve the categories for a single post in WordPress. Streamline your website's navigation and improve user experience by displaying relevant categories for each post. Implement this code to enhance your website's functionality and optimize your WordPress development process.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//Get categories on single post
+global $product;
+
+$terms = get_the_terms( $product->get_id(), 'product_cat' );
+foreach ( $terms as $term ) {
+    echo $term->name;
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="af">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Get tags on single post
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Retrieve the tags for a single post in WordPress with ease using the following code. Improve your website's navigation and user experience by displaying relevant tags for each post. Simplify your WordPress development process and enhance your website's functionality with this useful code snippet.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//Get tags on single post
+global $product;
+
+$terms = get_the_terms( $product->get_id(), 'product_tags' );
+foreach ( $terms as $term ) {
+    echo $term->name;
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ag">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Adding Wordpress Menu
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Retrieve a registered WordPress menu with ease using the following code. Display your menu on your website to improve navigation and user experience. Simplify your WordPress development process and enhance your website's functionality with this useful code snippet.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//first need to register menu in function file  
+function register_snipshot_menu() {
+register_nav_menu('header-menu',__( 'header' ));
+register_nav_menu('footer-menu',__( 'footer' ));
+}
+
+add_action( 'init' , 'register_snipshot_menu' );
+
+// add this code where you want to show your menu  
+wp_nav_menu(
+    array(
+        'theme_location'   =>     'header',
+        'menu'             =>     'header-menu',
+        'menu_class'       =>     'navbar-nav',
+        'menu_id'          =>     'primary-menu',
+        'container_class'  =>     'menu-inner',
+    )
+)
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ag1">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Add class in menu li.
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Add a custom class to the li element in your WordPress menu with the following code. Enhance your website's design and user experience by customizing your menu with unique classes. Implement this code to optimize your WordPress development process and improve your website's functionality.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//add class in li
+add_filter ( 'nav_menu_css_class', 'add_class_to_menu_list', 10, 4 );
+
+function add_class_to_menu_list ( $classes, $item, $args, $depth ){
+    if ($args->theme_location == 'header') { 
+    /**** according to theme location *****/
+    $classes[] = 'gc-nav-item'; 
+    }
+    
+    if ($args->theme_location == 'sidebar') { 
+    /**** according to theme location *****/
+    $classes[] = 'gc-sidebar-item'; 
+    }
+    return $classes;
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ag2">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Add class in menu anchor.
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Add a custom class to the anchor element in your WordPress menu using the following code. Improve your website's design and user experience by customizing your menu with unique classes. Simplify your WordPress development process and enhance your website's functionality with this useful code snippet.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//add class in anchor
+add_filter( 'nav_menu_link_attributes', 'add_class_to_list_anchor', 10, 4 );
+
+function add_class_to_list_anchor($atts, $item, $args, $depth) {
+    if ($args->theme_location == 'header') { 
+    /**** according to theme location *****/
+        $atts['class'] = "gc-nav-link";
+    }
+return $atts;
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ag3">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Overide Submenu Class
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Override the default submenu class in your WordPress menu with the following code. Customize your website's design and user experience by creating unique submenu classes. Implement this code to streamline your WordPress development process and optimize your website's functionality.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//overide submenu class
+add_filter( 'nav_menu_submenu_css_class', 'add_sub_menu_class', 10, 4);
+
+function add_sub_menu_class($atts, $args, $depth) {
+    if ($args->theme_location == 'sidebar') { 
+    /**** according to theme location *****/
+        return array('gc-sidebar-submenu');
+    }
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ag4">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Add caret for submenus
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Add a caret to your WordPress submenu using the following code. Improve your website's navigation and user experience by providing a visual cue for submenus. Simplify your WordPress development process and enhance your website's functionality with this useful code snippet.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">// add caret for submenus
+function aiken_menu_arrow($item_output, $item, $depth, $args) {
+    if (in_array('menu-item-has-children', $item->classes)) {
+        $arrow = '&lt;span class="subMenuAngle"&gt; &lt;i class="fas fa-chevron-down"&gt;&lt;/i&gt;&lt;/span&gt;'; // Change the class to your font icon
+        $item_output = str_replace('&lt;/a&gt;', '&lt;/a&gt;'. $arrow .'', $item_output);
+    }
+    return $item_output;
+}
+add_filter('walker_nav_menu_start_el', 'aiken_menu_arrow', 10, 4);
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ah">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Register Sidebar
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    With the following code, you can register a custom sidebar in WordPress. Customize your website's design and user experience by creating unique sidebars for specific pages or categories. Implement this code to optimize your WordPress development process and improve your website's functionality.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//Register Sidebar in function.php
+register_sidebar(
+    array(
+        'name' => _x('Mail Widget', 'backend', 'cargopress-pt'),
+        'id' => 'mail-widgets',
+        'description' => _x('Header area for Mail ID.', 'backend', 'cargopress-pt'),
+        'before_widget' => '<div class="widget  %2$s">',
+        'after_widget' => '</div>',
+    )
+);
+
+// Show on frontend
+if (is_active_sidebar('mail-widgets')) {
+    dynamic_sidebar('mail-widgets');
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ai">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Create Shorcode
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Create a custom shortcode in WordPress using the following code. Simplify your website development process by creating a shortcode that can be easily used throughout your website. Enhance your website's functionality and optimize your WordPress development process with this useful code snippet.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//Create Shorcode  
+function shortcode_function($sc_atts){
+    $sc_default = array(
+        'id' => '0',
+    );
+    $sc_page_id = shortcode_atts($sc_default, $sc_atts);
+    
+    // your code goes here or include any file 
+}
+
+add_shortcode( 'shortcode_name' , 'shortcode_function' );
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <!--
+                        <li id="aj">
+                            <div>
+                                <span class="text">
+                                    Get categories of Custom Post
+                                </span>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//Get categories of custom post 
+$args = array(
+'type'                     => 'casestudy',
+'child_of'                 => 0,
+'parent'                   => '',
+'orderby'                  => 'name',
+'order'                    => 'ASC',
+'hide_empty'               => 1,
+'hierarchical'             => 1,
+'taxonomy'                 => 'categories',
+'pad_counts'               => false );
+$categories = get_categories($args);
+
+<ul>
+    <li>
+        <a class="active" data-filter="*" href="javascript:void(0)">
+            All Market
+        </a>
+    </li>
+<?php 
+    foreach ($categories as $category) {
+        $url = get_term_link($category);?>
+        
+    <li>
+        <a class="active" data-filter=".<?php echo $url;?>" href="javascript:void(0)">
+            <?php echo $category->name; ?>
+        </a>
+    </li>
+
+<?php } ?>
+</ul>
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+-->
+
+                        <li id="aj">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Get categories and subcategories of post
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Retrieve the categories and subcategories of a post in WordPress with the following code. Streamline your website's navigation and improve user experience by displaying relevant categories and subcategories for each post. Implement this code to enhance your website's functionality and optimize your WordPress development process.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//Get categories and subcategories of post 
+$outlet_type = get_terms(["taxonomy" => "product_cat", "parent" => 0]);
+foreach($outlet_type as $outlet){
+    $terms = get_terms( 
+        array(
+            'taxonomy'   => 'product_cat',
+            'hide_empty' => false,
+            'parent'     => $outlet->term_id
+            ) 
+    );
+    $html .='<span data-id="'.$outlet->term_id.'" value="'.$outlet->name.'">'.$outlet->name.'</span>';
+    foreach ( $terms as $term ) {
+        $html .='<span data-id="'.$term->term_id.'" value="'.$term->name.'">'.$term->name.'</span>'; 
+    }
+
+}
+echo $html;
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ak1">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Redirect after Login & Registration
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Redirect users to a specific page after login or registration with the following code. Enhance your website's user experience by providing a customized redirect page for your users. Implement this code to optimize your WordPress development process and improve your website's functionality.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//Redirect user after login and registration to shop page
+function ap_login_redirect_wc( $redirect, $user ) {
+    return home_url('/shop');
+}
+add_action('woocommerce_login_redirect', 'ap_login_redirect_wc', 10, 2);
+
+
+function ap_registration_redirect_wc() {
+//    wp_logout();
+    return home_url('/shop');
+}
+add_action('woocommerce_registration_redirect', 'ap_registration_redirect_wc', 2);
+
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ak2">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Custom Woocomerce Login
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Customize the login functionality of your WooCommerce store with the following code. Enhance your website's user experience and branding by customizing the WooCommerce login form. Implement this code to optimize your WordPress development process and improve your website's functionality.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">/* Shortcode for woocommerce login  */
+
+add_shortcode( 'wc_login_form_jags', 'jags_separate_login_form' );
+
+function jags_separate_login_form() {
+if ( is_admin() ) return;
+if ( is_user_logged_in() ) return; 
+ob_start();
+woocommerce_login_form( array( 'redirect' => 'https://socialx22.sg-host.com/' ) );
+return ob_get_clean();
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ak3">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Custom Woocommerce Login & Register Form
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Create a custom WooCommerce login and registration form with the following code. Improve your website's user experience and branding by creating a unique login and registration form. Simplify your WordPress development process and enhance your website's functionality with this useful code snippet.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">
+    &lt;?php 
+
+        /*** add this code in funtion.php ***/
+        
+        /**
+         * Custom Login Shortcode For Home 2 
+        **/
+          
+        add_shortcode( 'wc_login_form_jags', 'jags_separate_login_form' );
+          
+        function jags_separate_login_form() {
+           if ( is_admin() ) return;
+           if ( is_user_logged_in() ) return; 
+           ob_start();
+           woocommerce_login_form( array( 'redirect' =&gt; 'https://your-redirect-url.com/' ) );
+           return ob_get_clean();
+        }
+        
+        
+        /**
+         * @snippet       WooCommerce User Registration Shortcode
+         * @author        Jags
+         */
+           
+        add_shortcode( 'wc_reg_form_jags', 'jags_woo_registration_form' );
+            
+        function jags_woo_registration_form() {
+           if ( is_admin() ) return;
+           if ( is_user_logged_in() ) return;
+           ob_start();
+         
+           // NOTE: THE FOLLOWING &lt;FORM&gt;&lt;/FORM&gt; IS COPIED FROM woocommerce\templates\myaccount\form-login.php
+           // IF WOOCOMMERCE RELEASES AN UPDATE TO THAT TEMPLATE, YOU MUST CHANGE THIS ACCORDINGLY
+         
+           do_action( 'woocommerce_before_customer_login_form' );
+         
+           ?&gt;
+              &lt;form method="post" class="woocommerce-form woocommerce-form-register register" &lt;?php do_action( 'woocommerce_register_form_tag' ); ?&gt; &gt;
+         
+                 &lt;?php do_action( 'woocommerce_register_form_start' ); ?&gt;
+         
+                 &lt;?php if ( 'no' === get_option( 'woocommerce_registration_generate_username' ) ) : ?&gt;
+         
+                    &lt;p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide"&gt;
+                       &lt;label for="reg_username"&gt;&lt;?php esc_html_e( 'Username', 'woocommerce' ); ?&gt; &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                       &lt;input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="reg_username" autocomplete="username" value="&lt;?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?&gt;" /&gt;&lt;?php // @codingStandardsIgnoreLine ?&gt;
+                    &lt;/p&gt;
+         
+                 &lt;?php endif; ?&gt;
+         
+                 &lt;p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide"&gt;
+                    &lt;label for="reg_email"&gt;&lt;?php esc_html_e( 'Email address', 'woocommerce' ); ?&gt; &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                    &lt;input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" autocomplete="email" value="&lt;?php echo ( ! empty( $_POST['email'] ) ) ? esc_attr( wp_unslash( $_POST['email'] ) ) : ''; ?&gt;" /&gt;&lt;?php // @codingStandardsIgnoreLine ?&gt;
+                 &lt;/p&gt;
+         
+                 &lt;?php if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) : ?&gt;
+         
+                    &lt;p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide"&gt;
+                       &lt;label for="reg_password"&gt;&lt;?php esc_html_e( 'Password', 'woocommerce' ); ?&gt; &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                       &lt;input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password" id="reg_password" autocomplete="new-password" /&gt;
+                    &lt;/p&gt;
+         
+                 &lt;?php else : ?&gt;
+         
+                    &lt;p&gt;&lt;?php esc_html_e( 'A password will be sent to your email address.', 'woocommerce' ); ?&gt;&lt;/p&gt;
+         
+                 &lt;?php endif; ?&gt;
+         
+                 &lt;?php do_action( 'woocommerce_register_form' ); ?&gt;
+         
+                 &lt;p class="woocommerce-FormRow form-row"&gt;
+                    &lt;?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?&gt;
+                    &lt;button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit" name="register" value="&lt;?php esc_attr_e( 'Register', 'woocommerce' ); ?&gt;"&gt;&lt;?php esc_html_e( 'Register', 'woocommerce' ); ?&gt;&lt;/button&gt;
+                 &lt;/p&gt;
+         
+                 &lt;?php do_action( 'woocommerce_register_form_end' ); ?&gt;
+         
+              &lt;/form&gt;
+         
+           &lt;?php
+             
+           return ob_get_clean();
+        }
+        ?&gt;
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ak4">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Logout from Woocommerce
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Allow users to log out from your WooCommerce store with the following code. Improve your website's user experience and security by providing a logout functionality for your users. Implement this code to optimize your WordPress development process and improve your website's functionality.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">&lt;!-- Logout Link (add in href) -->
+&lt;a href="./my-account/customer-logout/?_wpnonce=2bbbac43a8&customer-logout=true">Logout&lt;/a>
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ak5">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Remove links of single products from products listing
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Remove the links of single products from the products listing in WooCommerce with the following code. Customize the design of your product listing page by removing unwanted links. Implement this code to optimize your WordPress development process and improve your website's functionality.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">/*** remove single products link ***/
+remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
+
+/*** redirect single product page to shop page  ****/
+add_action('wp', 'ts_redirect_product_pages', 99);
+function ts_redirect_product_pages()
+{
+
+    if (is_product()) {
+        wp_safe_redirect(home_url('/shop'));
+        exit;
+    }
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ak6">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Remove/Reduce Password Security
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Remove or reduce the password security for your website with the following code. Simplify your website's login process and improve user experience. Implement this code to enhance your website's functionality and optimize your WordPress development process.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">/*** reduce password security ***/
+function snipshot_min_password_strength( $strength ) {
+    return 2;
+}
+add_filter( 'woocommerce_min_password_strength', 'snipshot_min_password_strength', 10, 1 );
+
+/*** reduce password security ***/
+function snipshot_remove_password_strength() {
+    wp_dequeue_script( 'wc-password-strength-meter' );
+}
+add_action( 'wp_print_scripts', 'snipshot_remove_password_strength', 10 );
+
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="al">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Get file size
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Retrieve the file size when using the Advanced Custom Fields plugin in WordPress with the following code. Enhance your website's functionality and user experience by displaying file size information. Implement this code to optimize your WordPress development process.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//Get file size of upladed file using ACF (this method can also used for normal condition)
+while( have_rows('ap-zips') ) : the_row(); 
+    $images = get_sub_field('photos_zip' );
+    $fileSize = $images['filesize'];
+    $fileSize = size_format($fileSize, 2);
+    echo $images['url'];
+    echo $fileSize;
+endwhile; 
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="am">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Upload Files from Fronend in wordpress using Ajax
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Allow users to upload files from the frontend of your WordPress website using Ajax with the following code. Improve your website's user experience and functionality by providing a convenient way for users to upload files. Implement this code to optimize your WordPress development process.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">//php part put this code in function.php
+function blog_scripts() {
+    // Register the script
+    wp_register_script( 'custom-script', get_stylesheet_directory_uri(). '/js/custom.js', array('jquery'), false, true );
+
+    // Localize the script with new data
+    $script_data_array = array(
+        'ajaxurl' => admin_url( 'admin-ajax.php' ),
+        'security' => wp_create_nonce( 'file_upload' ),
+    );
+    wp_localize_script( 'custom-script', 'blog', $script_data_array );
+
+    // Enqueued script with localized data.
+    wp_enqueue_script( 'custom-script' );
+}
+add_action('wp_enqueue_scripts', 'blog_scripts');
+add_action('wp_ajax_file_upload', 'file_upload_callback');
+add_action('wp_ajax_nopriv_file_upload', 'file_upload_callback');
+
+function file_upload_callback() {
+    check_ajax_referer('file_upload', 'security');
+    $arr_img_ext = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif');
+    if (in_array($_FILES['file']['type'], $arr_img_ext)) {
+        $upload = wp_upload_bits($_FILES["file"]["name"], null, file_get_contents($_FILES["file"]["tmp_name"]));
+        //$upload['url'] will gives you uploaded file path
+    }
+    wp_die();
+}
+</code>
+                                </pre>
+                                </span>
+
+
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">&lt;!-- html part put this code from where you want to upload files to server using ajax---&gt;
+&lt;form class="fileUpload" id="formSubmit_ap" enctype="multipart/form-data"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label>Choose File:&lt;/label&gt;
+        &lt;input type="file" id="file" accept="image/*" /&gt;
+
+        &lt;input type="submit"&gt;
+    &lt;/div>
+&lt;/form>
+</code>
+                                </pre>
+                                </span>
+
+
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-js">// js part | put this code in custom.js file which is enqueue using above php script 
+jQuery(function($) {
+    $('#formSubmit_ap').on('submit', function(e) {
+        e.preventDefault();
+        $this = $("#file");
+        var file_data = $("#file").prop('files')[0];
+        var form_data = new FormData();
+        form_data.append('file', file_data);
+        form_data.append('action', 'file_upload');
+        form_data.append('security', blog.security);
+
+        $.ajax({
+            url: blog.ajaxurl,
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            data: form_data,
+            success: function (response) {
+                $this.val('');
+                alert('File uploaded successfully.');
+            }
+        });
+    });
+});
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="an">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Register Custom Post Type
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Register a custom post type in WordPress with the following code. Customize your website's content and improve user experience by creating unique post types. Implement this code to optimize your WordPress development process and enhance your website's functionality.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">// Register Custom Post
+function snipshot_theme_post_types()
+{	
+    register_post_type('media', array(
+        'labels' => array(
+            'name' => 'Media',
+            'add_new_item' => 'Add New Media',
+            'edit_item' => 'Edit Media',
+            'all_items' => 'All Media',
+            'singular_name' => 'Media',
+        ),
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus' => true,
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'comments', 'post-formats', 'revisions','excerpt' ),
+        'hierarchical' => false,
+        'has_archive' => 'media',
+        'menu_icon' => 'dashicons-calendar',
+        'taxonomies' => array('media-category'),
+        'rewrite'   => array( 'slug' => false, 'with_front' => false ),  
+        'menu_icon' => 'dashicons-calendar',
+    ));
+}
+add_action('init', 'snipshot_theme_post_types');;
+endwhile; 
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ao">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Get Post with Pagination using wp-query
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Retrieve posts with pagination using wp-query in WordPress with the following code. Improve your website's navigation and user experience by displaying posts with pagination. Simplify your WordPress development process and enhance your website's functionality with this useful code snippet.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">// WP Query
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; // for pagination
+$args = array(
+'post_type' => 'post',
+'post_status' => 'publish',
+'category_name' => 'media', // category name
+'posts_per_page' => 10,
+'paged' => $paged // for pagination
+
+$arr_posts = new WP_Query( $args );
+    if ( $arr_posts->have_posts() ) :
+        while ( $arr_posts->have_posts() ) :
+            $arr_posts->the_post();
+                echo "items which you want to run in loop";
+        endwhile;
+    endif; 
+wp_reset_postdata();
+
+// for pagination
+$total_pages = $arr_posts->max_num_pages;
+if ($total_pages > 1){
+
+    $current_page = max(1, get_query_var('paged'));
+
+    echo paginate_links(array(
+        'base' => get_pagenum_link(1) . '%_%',
+        'format' => '/page/%#%',
+        'current' => $current_page,
+        'total' => $total_pages,
+        'prev_text'    => __('« prev'),
+        'next_text'    => __('next »'),
+    ));
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ap">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Code for only business emails are valid in contact forms
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    When creating a contact form on your website, it is important to ensure that the email addresses entered by users are valid and relevant to your business. One way to do this is by implementing code that only accepts business email addresses.
+                                    <br /><br />
+                                    Using code that restricts email addresses to only those belonging to a business domain can help reduce spam and prevent users from entering incorrect or irrelevant information. This can help streamline your communication with potential customers and ensure that you are only receiving inquiries from individuals who are genuinely interested in your products or services.
+                                    <br /><br />
+                                    Furthermore, implementing such code can improve the overall user experience on your website by reducing the likelihood of users receiving error messages or encountering technical difficulties when attempting to submit their contact information. This can improve the credibility and trustworthiness of your website, which can ultimately lead to increased engagement and conversions.
+                                    <br /><br />
+                                    In terms of search engine optimization (SEO), using code that restricts email addresses to business domains can help improve the quality of the leads you generate through your website. By only accepting valid business email addresses, you can ensure that the leads you receive are more likely to be relevant to your business and more likely to convert into customers. This can ultimately help improve your website's search engine rankings and drive more organic traffic to your site.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">// Code for Valid Business Mails
+function is_business_email($email){
+    if(preg_match('/@hotmail.com/i', $email) ||
+        preg_match('/@gmail.com/i', $email) ||
+        preg_match('/@yahoo.co/i', $email) ||
+        preg_match('/@yahoo.com/i', $email) ||
+        preg_match('/@mailinator.com/i', $email) ||
+        preg_match('/@gmail.co.in/i', $email) ||
+        preg_match('/@aol.com/i', $email) ||
+        preg_match('/@yandex.com/i', $email) ||
+        preg_match('/@msn.com/i', $email) ||
+        preg_match('/@gawab.com/i', $email) ||
+        preg_match('/@inbox.com/i', $email) ||
+        preg_match('/@gmx.com/i', $email) ||
+        preg_match('/@rediffmail.com/i', $email) ||
+        preg_match('/@in.com/i', $email) ||
+        preg_match('/@live.com/i', $email) ||
+        preg_match('/@hotmail.co.uk/i', $email) ||
+        preg_match('/@hotmail.fr/i', $email) ||
+        preg_match('/@yahoo.fr/i', $email) ||
+        preg_match('/@wanadoo.fr/i', $email) ||
+        preg_match('/@wanadoo.fr/i', $email) ||
+        preg_match('/@comcast.net/i', $email) ||
+        preg_match('/@yahoo.co.uk/i', $email) ||
+        preg_match('/@yahoo.com.br/i', $email) ||
+        preg_match('/@yahoo.co.in/i', $email) ||
+        preg_match('/@rediffmail.com/i', $email) ||
+        preg_match('/@free.fr/i', $email) ||
+        preg_match('/@gmx.de/i', $email) ||
+        preg_match('/@gmx.de/i', $email) ||
+        preg_match('/@yandex.ru/i', $email) ||
+        preg_match('/@ymail.com/i', $email) ||
+        preg_match('/@libero.it/i', $email) ||
+        preg_match('/@outlook.com/i', $email) ||
+        preg_match('/@uol.com.br/i', $email) ||
+        preg_match('/@bol.com.br/i', $email) ||
+        preg_match('/@mail.ru/i', $email) ||
+        preg_match('/@cox.net/i', $email) ||
+        preg_match('/@hotmail.it/i', $email) ||
+        preg_match('/@sbcglobal.net/i', $email) ||
+        preg_match('/@sfr.fr/i', $email) ||
+        preg_match('/@live.fr/i', $email) ||
+        preg_match('/@verizon.net/i', $email) ||
+        preg_match('/@live.co.uk/i', $email) ||
+        preg_match('/@googlemail.com/i', $email) ||
+        preg_match('/@yahoo.es/i', $email) ||
+        preg_match('/@ig.com.br/i', $email) ||
+        preg_match('/@live.nl/i', $email) ||
+        preg_match('/@bigpond.com/i', $email) ||
+        preg_match('/@terra.com.br/i', $email) ||
+        preg_match('/@yahoo.it/i', $email) ||
+        preg_match('/@neuf.fr/i', $email) ||
+        preg_match('/@yahoo.de/i', $email) ||
+        preg_match('/@live.com/i', $email) ||
+        preg_match('/@yahoo.de/i', $email) ||
+        preg_match('/@rocketmail.com/i', $email) ||
+        preg_match('/@att.net/i', $email) ||
+        preg_match('/@laposte.net/i', $email) ||
+        preg_match('/@facebook.com/i', $email) ||
+        preg_match('/@bellsouth.net/i', $email) ||
+        preg_match('/@yahoo.in/i', $email) ||
+        preg_match('/@hotmail.es/i', $email) ||
+        preg_match('/@charter.net/i', $email) ||
+        preg_match('/@yahoo.ca/i', $email) ||
+        preg_match('/@yahoo.com.au/i', $email) ||
+        preg_match('/@rambler.ru/i', $email) ||
+        preg_match('/@hotmail.de/i', $email) ||
+        preg_match('/@tiscali.it/i', $email) ||
+        preg_match('/@shaw.ca/i', $email) ||
+        preg_match('/@yahoo.co.jp/i', $email) ||
+        preg_match('/@sky.com/i', $email) ||
+        preg_match('/@earthlink.net/i', $email) ||
+        preg_match('/@optonline.net/i', $email) ||
+        preg_match('/@freenet.de/i', $email) ||
+        preg_match('/@t-online.de/i', $email) ||
+        preg_match('/@aliceadsl.fr/i', $email) ||
+        preg_match('/@virgilio.it/i', $email) ||
+        preg_match('/@home.nl/i', $email) ||
+        preg_match('/@qq.com/i', $email) ||
+        preg_match('/@telenet.be/i', $email) ||
+        preg_match('/@me.com/i', $email) ||
+        preg_match('/@yahoo.com.ar/i', $email) ||
+        preg_match('/@tiscali.co.uk/i', $email) ||
+        preg_match('/@yahoo.com.mx/i', $email) ||
+        preg_match('/@gmx.net/i', $email) ||
+        preg_match('/@mail.com/i', $email) ||
+        preg_match('/@planet.nl/i', $email) ||
+        preg_match('/@tin.it/i', $email) ||
+        preg_match('/@live.it/i', $email) ||
+        preg_match('/@ntlworld.com/i', $email) ||
+        preg_match('/@arcor.de/i', $email) ||
+        preg_match('/@yahoo.co.id/i', $email) ||
+        preg_match('/@frontiernet.net/i', $email) ||
+        preg_match('/@hetnet.nl/i', $email) ||
+        preg_match('/@live.com.au/i', $email) ||
+        preg_match('/@yahoo.com.sg/i', $email) ||
+        preg_match('/@zonnet.nl/i', $email) ||
+        preg_match('/@club-internet.fr/i', $email) ||
+        preg_match('/@juno.com/i', $email) ||
+        preg_match('/@optusnet.com.au/i', $email) ||
+        preg_match('/@blueyonder.co.uk/i', $email) ||
+        preg_match('/@bluewin.ch/i', $email) ||
+        preg_match('/@skynet.be/i', $email) ||
+        preg_match('/@sympatico.ca/i', $email) ||
+        preg_match('/@windstream.net/i', $email) ||
+        preg_match('/@mac.com/i', $email) ||
+        preg_match('/@centurytel.net/i', $email) ||
+        preg_match('/@chello.nl/i', $email) ||
+        preg_match('/@live.ca/i', $email) ||
+        preg_match('/@aim.com/i', $email) ||
+        preg_match('/@bigpond.net.au/i', $email))
+    {
+        return false; // It's a publicly available email address
+    }
+    else{
+        return true; // It's probably a company email address
+    }
+}
+function custom_email_validation_filter($result, $tag) {
+    $tag = new WPCF7_Shortcode( $tag );
+    if ( 'email' == $tag->name ) {
+        $the_value = isset( $_POST['email'] ) ? trim( $_POST['email'] ) : "";
+        if(!is_business_email($the_value)){
+            $result->invalidate( $tag, "Please enter a valid business email" );
+        }
+    }
+    return $result;
+}
+add_filter( 'wpcf7_validate_email', 'custom_email_validation_filter', 10, 2 );
+add_filter( 'wpcf7_validate_email*', 'custom_email_validation_filter', 10, 2 );
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./assets/function.js"></script>
+
+</body>
+
+</html>
