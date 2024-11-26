@@ -78,7 +78,7 @@ h6{
 }
 
 .left .inner > ul {
-    height: 100vh;
+    height: calc(100vh - 180px);
     overflow-y: auto;
 }
 
